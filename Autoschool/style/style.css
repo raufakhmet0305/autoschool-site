@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6,blockquote {
+ font-family: "Roboto Serif", sans-serif;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+:root {
+    --black: #000000;
+    --blue: #4357C5;
+    --brown: #794B3F;
+    --red: #D20000;
+    --white: #FFFFFF;
+}
+.container {
+    width:1140px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 64px;
+    font-weight: 900;
+}
+.color-white {
+    color: var(--white);
+}
+.header a {
+    color: #fff;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2 ease;
+}
+.header a:hover {
+    color: #f0a500;
+}
+.header a:active {
+    transform: scale(0.95);
+    color: #ffcc66;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header {
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #794B3F;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo img {
+    width: 167px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 51px;
+}
+.header-nav__link {
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+.header-nav__link:hover {
+    color: gold;
+}
+.header-nav__btn, .home-btn {
+    color: var(--white);
+    border: 1px solid var(--red);
+    padding: 205px 45px;
+    border-radius: 50px;
+}
+/* home */
+.home {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,10%), rgba(0,0,0,10%)), url(../img/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-title, .home-content {
+    color: var(--white);
+    margin-bottom: 45px;
+}
+.home-title {
+    font-size: 64px;
+    font-weight: 1000px;
+}
+.home-content {
+    font-size: 18px;
+}
+.home-btn {
+    padding: 10px 27px;
+    color: var(--white);
+    background: #D20000;
+}
+.home-btn {
+    color: #fff;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2 ease;
+}
+.home-btn:hover {
+    color: #f0a500;
+}
+.home-btn:active {
+    transform: scale(0.95);
+    color: #ffcc66;
+}
+/*  */
+
+/*about*/
+/* about */
+.about {
+    height: 100vh; /* фиксируем на высоту экрана */
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* растягиваем на всю ширину */
+    margin: 0; 
+    padding: 0;
+    overflow: hidden; /* обрезаем лишнее */
+}
+
+.about-flex {
+    display: flex;
+    align-items: stretch; /* текст и картинка одной высоты */
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.about-content {
+    flex: 1;
+    padding: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white); 
+}
+
+.title-color-black {
+    font-size: 64px;      
+    color: var(--black);
+    margin-bottom: 20px;  
+    text-align: left;      
+}
+.content-color-black {
+    font-size: 18px;      
+    color: var(--black);
+    line-height: 1.6;
+    text-align: left;      
+}
+.about-img {
+    width: 50%; 
+    height: 100%;
+    object-fit: cover; 
+}
+/*   */
+/*confidence*/
+.confidence {
+    padding: 110px 0;
+    background-color: var(--brown);
+    text-align: center;
+
+}
+.confidence blockquote {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 900;
+}
+/*  */
+
+/*courses*/
+.courses {
+    min-height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.courses-row {
+    display: flex;
+    justify-content: center;  
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.courses-card {
+    background-color: #794B3F;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    width: 300px; 
+    color: var(--white);
+    text-align: left;
+    margin: 10px;
+}
+
+.courses-card__data {
+    border-radius: 0; 
+}
+/*  */
+/*price table*/
+.container {
+  text-align: center;
+  margin-top: 30px;
+}
+h2 {
+  font-size: 64px;
+}      
+.price {   
+color: var(--white); 
+margin-top: 20px;     
+min-height: 100vh;
+display: flex; 
+align-items: center;
+text-align: start;
+ background: url(../img/price.png);
+}
+.price-table {
+  margin: 0 auto;
+  align-items: center;
+  border-collapse: collapse;
+  width: 800px;
+  height: 600px;
+  font-size: 18px; 
+  border-radius: 12px;         
+  overflow: hidden;             
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+   margin-left: 60px;
+  margin-top: 60px;
+  padding: 30px;
+
+}
+
+.price-table th,
+.price-table td {
+  border: 2px solid #fff;
+  padding: 14px 18px;
+  background-color: #794B3F; 
+}
+
+.price-table th {
+  font-weight: bold;
+}
+/*contacts*/
+.contact-container {
+  display: flex;
+  background: var(--white);
+  width: 1440px;
+  height: 1024px;
+}
+
+.contact-info {
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.contact-info h2 {
+  margin-bottom: 50px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: left;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.contact-info li img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.note {
+  margin-top: 250px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.contact-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-info {
+  width: 40%;
+  padding: 30px;
+}
+
+.contact-image {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;  /* прижали к правому краю */
+  align-items: center;
+  background: var(--white);
+}
+
+.contact-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+/* */
